@@ -266,7 +266,7 @@ interface BulletLeadVisualizerProps {
 const BulletLeadVisualizer: React.FC<BulletLeadVisualizerProps> = ({ personHeightMeters }) => {
   const [distanceToTarget, setDistanceToTarget] = useState(90) // meters
   const [muzzleVelocity, setMuzzleVelocity] = useState(400) // meters/second
-  const [enemySpeedMeters, setEnemySpeedMeters] = useState(HUNTER_SPEED_METERS_PER_SECOND)
+  const [enemySpeedMeters, _setEnemySpeedMeters] = useState(HUNTER_SPEED_METERS_PER_SECOND)
   const [displayMeterMarks, setDisplayMeterMarks] = useState(true)
   const [inputType, setInputType] = useState(InputType.SLIDER)
 
