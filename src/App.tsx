@@ -334,7 +334,7 @@ const BulletLeadVisualizer: React.FC<BulletLeadVisualizerProps> = ({ personHeigh
           <input
             id="distanceToTarget"
             type={inputType === InputType.SLIDER ? "range" : "number"}
-            min={0}
+            min={1}
             max={MAX_DISTANCE_TO_TARGET}
             step={1}
             value={distanceToTarget}
@@ -346,7 +346,7 @@ const BulletLeadVisualizer: React.FC<BulletLeadVisualizerProps> = ({ personHeigh
           <input
             id="muzzleVelocity"
             type={inputType === InputType.SLIDER ? "range" : "number"}
-            min={0}
+            min={10}
             max={MAX_MUZZLE_VELOCITY}
             step={10}
             value={muzzleVelocity}
